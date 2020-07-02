@@ -1,0 +1,75 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+
+.slider{
+    background-image: url(/Images/Logo.png), linear-gradient(175deg,$secondary_transparent_color 5%, $primary_light_color  30%, $secondary_light_color);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light;
+    position: fixed;
+    top: calc(100vh - 92vh);
+    left: 0;
+    min-height: 100vh;
+    min-width: 100%;
+    z-index: 3;
+    .closeSlider{
+        position: absolute;
+        right: 10vw;
+        color: $plainWhite;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .slider-mainflex{
+        flex-direction: column;
+        justify-content: space-between;
+        .sliderMenu{
+            min-width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+            ul{
+                @include flex(space-around,center);
+                min-width: 100%;
+                flex-direction: column;
+                box-sizing: border-box;
+                li{
+                    list-style-type: none;
+                    border-bottom: 2px solid $plainWhite;
+                    padding: 10px;
+                    color: $plainWhite;
+                    font-size: 4vw;
+                    font-weight: 800;
+                    letter-spacing: 1px;
+                    &:hover{
+                        cursor: pointer;
+                        color:$plainWhite;
+                    }
+                }
+            }
+           }
+           .slider-iconcontainerflex{
+               width: 100%;
+               justify-content: space-around;
+               margin-top: 10vw;
+               .Icon-flex{
+                   margin:1vw;
+                   flex-direction: column;
+                   .icon-desc{
+                       font-size: 4vw;
+                       font-weight: 800;
+                       letter-spacing: 1px;
+                       margin:0;
+                       color:$plainBlack;
+                   }
+                .slider-icons{
+                    color: $plainWhite;
+                    font-size: 5vh;
+                   }
+                  
+               } 
+           }
+    }
+ 
+   
+}

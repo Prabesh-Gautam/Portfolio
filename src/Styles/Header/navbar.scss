@@ -1,0 +1,48 @@
+@import '../Sass_mixins/mixins';
+@import '../Sass_variables/variables';
+@import '../Components_Styles/brand.scss';
+@import '../Components_Styles/hamburgericon.scss';
+@import '../Components_Styles/menu.scss';
+
+.navBar{
+    @include flex(space-between, center);
+    background-image: linear-gradient(45deg,$secondary_transparent_color 60%,$plainBlack);
+    max-width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    .navBrand{
+        width: 10%;
+        border-radius: 50%;
+    }
+  
+}
+
+@media screen and (min-width:768px){
+    .navMenu{
+        // min-width: 40%;
+       ul{
+           @include flex(space-between, center);
+           box-sizing: border-box;
+           direction: column;
+           color:$tertiary_color;
+           li{
+               font-size: 1.5vmax;
+            //    margin-left: 1vw;
+               letter-spacing: 2px;
+               
+               
+            &:hover{
+                color:$primary_color;
+            }
+           }
+       }
+    }
+}
+
+
+
+
+

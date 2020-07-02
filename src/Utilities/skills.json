@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "name":"Soft Skills",
+        "list":[
+            "Creativity", 
+            "Quick Learner",
+            "Leadership",
+            "Communication", 
+            "Adaptability",
+            "Team Work",
+            "Time Management"
+        ],
+        "description":"Soft skills are the traits that make you a good employee. Some of the skills that I accquire was natural and other adapted later. Basically I am a hardworking person who is very much focused on the target acquiring the soft skill shown below."
+
+    },
+    {
+    "id":2,
+    "name":"Hard Skills",
+    "list":[
+        "HTML/HTML5",
+        "CSS/CSS3",
+        "Saas",
+        "JavaScript",
+        "EcmaScript6",
+        "ReactJs",
+        "MongoDB",
+        "Nodejs",
+        "ExpressJs"  
+    ],
+    "description":"Hard skills are part of the skill set that is required for a job. My hard skills are the result of hard work, determination and self motivation. I acquired those skills through my formal education and self-learning which includes reading documentations,free online courses and hands-on practices. All I have learned, I learned from books."
+    }
+
+]

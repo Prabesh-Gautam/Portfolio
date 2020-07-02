@@ -1,0 +1,61 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+@import '../Components_Styles/button.scss';
+@import '../Components_Styles/slider.scss';
+@import '../Components_Styles/banner.scss';
+
+
+
+.carouselContainer{
+    @include flex(space-around ,center);
+    min-width: 100%;
+    margin-top: 10vw;
+   
+    .carouselflexContainer{
+        width: 40%;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box; 
+        
+        .carouselbtn{
+            box-shadow: 0px 0px 10px 2px $primary_color ;
+            border: 2px solid $secondary_color ;
+            letter-spacing: 0.2vw;
+            &:hover{
+                transform: scale(0.95);
+                cursor: pointer;
+            }
+        }
+    }
+    .imageContainer{
+        text-align: center;
+        width: 50%;
+        position: relative;
+        clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+
+        
+        .short_desc{
+            box-sizing: border-box;
+            min-width: 100%;
+            min-height: 100%;
+            padding: 5px;
+            text-align: justify;
+            word-spacing: 1;
+            line-height: 2;
+            background-color:$transparent_color;
+            position: absolute;
+            top: 0%;
+            font-size: 2vw;
+            color: whitesmoke;
+            clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);   
+        }
+    };
+    
+}
+
+
+
+
+
+
+

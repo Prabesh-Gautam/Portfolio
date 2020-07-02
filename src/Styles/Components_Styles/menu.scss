@@ -1,0 +1,13 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+
+.menu{
+    ul{
+        padding: 0px;
+        margin: 0px;
+        li{
+            margin: 0px 2px;
+            list-style-type: none;
+        }
+    }
+}

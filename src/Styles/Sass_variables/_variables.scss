@@ -1,0 +1,24 @@
+$primaryFont: 'Open Sans', sans-serif;
+$plainWhite: rgb(255,255,255);
+$plainBlack:#292F36;
+
+$primary_color:#08415C;
+$primary_transparent_color:rgba(8, 65, 92,0.8);
+$primary_light_color:#6B818C;
+
+$secondary_color:#CC2936;
+$secondary_transparent_color: rgba(204, 41, 54,0.8);
+$secondary_light_color:#F1BF98;
+
+$tertiary_color:#EEE5E9;
+
+$transparent_color:rgba(0,0,0,0.3);
+
+$PS_gradient:linear-gradient(45deg,$primary_transparent_color,$secondary_transparent_color);
+$PLSL_gradient:linear-gradient(90deg,$plainWhite 2%, $primary_light_color, $secondary_light_color);
+$SLPT_gradient:linear-gradient(45deg,$secondary_light_color,$primary_transparent_color,$plainWhite);
+
+
+
+
+

@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "name":"facebook",
+        "redirect":"https://www.facebook.com/profile.php?id=100006443170383&ref=bookmarks",
+        "icon":"fab fa-facebook-square"
+    },
+    {
+        "id":1,
+        "name":"Instagram",
+        "redirect":"https://www.instagram.com/p.r.a.b.e.s.h/",
+        "icon":"fab fa-instagram-square"
+    },
+    {
+        "id":1,
+        "name":"Github",
+        "redirect":"https://github.com/Prabesh-Gautam",
+        "icon":"fab fa-github-square"
+    }
+    
+]

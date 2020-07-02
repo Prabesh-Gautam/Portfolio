@@ -1,0 +1,14 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+.btn{
+    padding: 1vw;
+    text-transform: capitalize;
+    font-weight: 800;
+    border: none;
+    color:$plainBlack;
+    border-radius: 10px;
+    font-size: 2vw;
+    outline: none;
+    box-shadow: 0px 0px 2px $plainBlack;
+    
+}

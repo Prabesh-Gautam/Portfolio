@@ -1,0 +1,10 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+
+.iconholder{
+text-align: center;
+padding: 1vw;
+color: $plainBlack;
+box-sizing: border-box;
+border: none;
+}

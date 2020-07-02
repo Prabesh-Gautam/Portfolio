@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "menuItem":"Home"
+    },
+    {
+        "id":2,
+        "menuItem":"About me"     
+    },
+    {
+        "id":3,
+        "menuItem":"Qualification"
+    },
+    {
+        "id":4,
+        "menuItem":"Skills"
+    },
+    {
+        "id":5,
+        "menuItem":"Project Done"
+    },
+    {
+        "id":6,
+        "menuItem":"Gallery"
+    },
+    {
+        "id":7,
+        "menuItem":"Contact me"
+    }
+        
+]

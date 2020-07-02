@@ -1,0 +1,7 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+
+.flexContainer{
+    @include flex(space-around, center);
+    
+}

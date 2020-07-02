@@ -1,0 +1,70 @@
+[
+    {
+        "id":1,
+        "icon":"fas fa-school",
+        "orgDetails":{
+            "name":"Green Valley Academy",
+            "title":"Schooling",
+            "estd":"na",
+            "location":"Ilam, Nepal",
+            "founder":"kumar Vaiday",
+            "link":"https://www.facebook.com/Green-Valley-Academy-Ilam-Nepal-375189275884625/",
+            "picture":"gva.jpg"
+        },
+        "personalDetail":{
+            "enrolled_year":"2058",
+            "completed_year":"2068",
+            "division":"Distinction",
+            "percentage_acquired":82.25,
+            "faculty":null
+
+        }
+    },
+    {
+        "id":2,
+        "icon":"fas fa-university",
+        "orgDetails":{
+            "name":"Nasa International College",
+            "title":"Intermediate",
+            "location":"Tinkune, Kathmandu",
+            "estd":"na",
+            "founder":"na",
+            "link":"https://www.facebook.com/NASA-International-College-1635427276485502/",
+            "picture":"nasa.jpg"
+            
+        },
+        "personalDetail":{
+            "percentage_acquired":62,
+            "division":"First Division",
+            "faculty":"Science",
+            "enrolled_year":"2068",
+            "completed_year":"2070"
+
+        }
+    },
+    {
+        "id":3,
+        "icon":"fas fa-graduation-cap",
+        "orgDetails":{
+            "name":"Asian College of Higher Studies",
+            "title":"Bachelor",
+            "location":"Putalisadak, Kathmandu",
+            "estd":"na",
+            "founder":"na",
+            "link":"https://achsnepal.edu.np/",
+            "picture":"achs.jpg"
+            
+
+        },
+        "personalDetail":{
+            "percentage_acquired":"NA",
+            "division":"na",
+            "faculty":"Computer Science and Information Technology",
+            "enrolled_year":"2072",
+            "completed_year":"NA"
+
+        }
+
+    }
+    
+]

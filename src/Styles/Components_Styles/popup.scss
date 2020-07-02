@@ -1,0 +1,15 @@
+@import '../Sass_variables/variables.scss';
+@import '../Sass_mixins/mixins.scss';
+.popup{
+    min-width: 100%;
+    min-height: 50px;
+    position: relative;
+    .popup-close{
+        padding: 1vw;
+        font-size: 2vw;
+        position: absolute;
+        right: 5%;
+        margin-top: 1vw;
+        
+    }
+}

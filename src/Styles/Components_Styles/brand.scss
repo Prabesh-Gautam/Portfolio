@@ -1,0 +1,14 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+.brand{
+    max-width:8vh ;
+    box-sizing: border-box;
+    cursor: pointer;
+    .brandImage{
+        width: 100%;
+        height: 100%;
+        background-color: $plainWhite;
+        border-radius: 50%;
+        transform:scale(0.85)
+    }
+}
