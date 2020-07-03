@@ -13,18 +13,17 @@ import Titletext from '../../Components/titletext'
 
 
 function Section2(props){
-    const [popup, setpopup] = React.useState(true)
-    const [value ,setvalue] = React.useState(2)
+    const [popup, setpopup] = React.useState(false)
+    const [value ,setvalue] = React.useState(null)
     
     function handlepopup(event){
+
         popup?setpopup(false):setpopup(true);
         setvalue(Number(event.target.id))
         console.log(value)
         
     }
-    const soft ="Soft skills are the traits that make you a good employee. Some of the skills that I accquire was natural and other adapted later. Basically I am a hardworking person who is very much focused on the target acquiring the soft skill shown below."
-    const hard ="Hard skills are part of the skill set that is required for a job. My hard skills are the result of hard work, determination and self motivation. I acquired those skills through my formal education and self-learning which includes reading documentations,free online courses and hands-on practices. All I have learned, I learned from books."
-    const desc=[soft, hard]
+ 
 
     
     return(

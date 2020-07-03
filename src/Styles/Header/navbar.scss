@@ -22,15 +22,14 @@
 
 @media screen and (min-width:768px){
     .navMenu{
-        // min-width: 40%;
        ul{
            @include flex(space-between, center);
            box-sizing: border-box;
            direction: column;
-           color:$tertiary_color;
+           color:$color5;
            li{
                font-size: 1.5vmax;
-            //    margin-left: 1vw;
+               margin-left: 1.5vw;
                letter-spacing: 2px;
                
                

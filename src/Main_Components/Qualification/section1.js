@@ -41,8 +41,8 @@ function Section1(props){
                                 icon={item.icon} 
                                 title={item.orgDetails.title} 
                                 className="sec1-cards">
-                                        <Iconholder className="sec1-cardIcon" id={`icon${item.orgDetails.title}${item.id}`}  icon={item.icon}  onClick={handleCardClick}/>
-                                        <Description  id={`desc${item.orgDetails.title}${item.id}`} info={item.orgDetails.title} className="sec1-carddesc" onClick={handleCardClick}/>
+                                        <Iconholder className="sec1-cardIcon" id={item.id}  icon={item.icon}  onClick={handleCardClick}/>
+                                        <Description  id={item.id} info={item.orgDetails.title} className="sec1-carddesc" onClick={handleCardClick}/>
                                 </Cards>
                                 )
                             })}

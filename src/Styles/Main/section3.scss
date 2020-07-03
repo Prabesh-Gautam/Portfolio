@@ -1,0 +1,43 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+
+.section3{
+    .section3-mainflex{
+        background-color: $color4;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 2vw;
+        height: 400px;
+        justify-content: space-evenly;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .section3-subflex{
+            width: 200px;
+            height: 400px;
+            flex-direction: column;
+            border: 2px solid black;
+            margin: 2vw;
+            box-sizing: border-box;
+            .project-logo{
+                width: 100%;
+            }
+            .main-title{
+                text-align: center;
+                margin: 5px;
+                font-size: 3vmax;
+            }
+            .sub-title{
+                text-align: center;
+                margin: 5px;
+                font-size: 2vmax;
+            }
+            .btn-more-details{
+                margin: 5px;
+                font-size: 3vmax;
+            }
+        }
+    }
+}

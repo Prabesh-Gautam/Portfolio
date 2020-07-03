@@ -1,7 +1,7 @@
 @import "../../Styles/Sass_variables/variables";
 @import '../Sass_mixins/mixins';
-@import 'sec1-card';
 @import 'popup';
+@import 'sec1_cards';
 
 .section1{
     width: 100%;
@@ -10,5 +10,6 @@
     .sec1card-flexbox{
         flex-wrap: wrap;
         justify-content: center;
+        
     }
 }

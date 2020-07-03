@@ -2,7 +2,7 @@
 @import '../Sass_mixins/mixins';
 
 .slider{
-    background-image: url(/Images/Logo.png), linear-gradient(175deg,$secondary_transparent_color 5%, $primary_light_color  30%, $secondary_light_color);
+    background-image: url(/Images/Logo.png), linear-gradient(175deg,$secondary_transparent_color 5%, $color3  30%, $color4);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
