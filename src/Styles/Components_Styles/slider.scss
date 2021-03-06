@@ -8,22 +8,25 @@
     background-position: center;
     background-blend-mode: soft-light;
     position: fixed;
-    top: calc(100vh - 92vh);
+    top: 0;
     left: 0;
     min-height: 100vh;
     min-width: 100%;
     z-index: 3;
+    transition:all;
+
+    
     .closeSlider{
         position: absolute;
-        right: 10vw;
+        right: 5vw;
         color: $plainWhite;
         &:hover{
             cursor: pointer;
+            
         }
     }
     .slider-mainflex{
         flex-direction: column;
-        justify-content: space-between;
         .sliderMenu{
             min-width: 50%;
             box-sizing: border-box;
@@ -38,7 +41,7 @@
                     border-bottom: 2px solid $plainWhite;
                     padding: 10px;
                     color: $plainWhite;
-                    font-size: 4vw;
+                    font-size: 3vmin;
                     font-weight: 800;
                     letter-spacing: 1px;
                     &:hover{
@@ -51,12 +54,12 @@
            .slider-iconcontainerflex{
                width: 100%;
                justify-content: space-around;
-               margin-top: 10vw;
+               margin-top: 5vw;
                .Icon-flex{
                    margin:1vw;
                    flex-direction: column;
                    .icon-desc{
-                       font-size: 4vw;
+                       font-size: 3vmin;
                        font-weight: 800;
                        letter-spacing: 1px;
                        margin:0;
@@ -72,4 +75,15 @@
     }
  
    
+}
+
+
+@media screen and (min-width:768px){
+    .slider{
+        position: fixed;
+        top: calc(100vh - 91.5%);
+        min-width:30% ;
+        
+       
+    }
 }

@@ -11,7 +11,8 @@ function Header(){
     const [menushow, setmenushow] = React.useState(true)
     const [deviceWidth, setdeviceWidth] = React.useState(window.innerWidth)
 
-    //adding a eventlistener to windows to retrive the width 
+    //adding a eventlistener to windows to retrive the width of the browser
+     
     window.addEventListener('resize', function(){ 
         const width = window.innerWidth
         setdeviceWidth(width)
@@ -35,10 +36,11 @@ function Header(){
 
     }
 
+
     return (
         <header>
            <NavBar menushowStatus = {menushow} handleHamClick={handleHamClick} deviceWidthStatus={deviceWidth}/>
-           <Carousel handleClickEvents={handleClosebtnClick} sliderStatus = {showSlider} handleCaroselClick={handleCarouselClick}/>    
+           <Carousel handleClickEvents={handleClosebtnClick} sliderStatus = {showSlider} handleCaroselClick={handleCarouselClick}  />    
         </header>
 
        

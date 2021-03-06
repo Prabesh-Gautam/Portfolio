@@ -31,10 +31,13 @@
                font-size: 1.5vmax;
                margin-left: 1.5vw;
                letter-spacing: 2px;
-               
+               transition: transform;
+               transition-duration: 1s;
+               transition-timing-function: ease-in-out;
                
             &:hover{
-                color:$primary_color;
+                color:$plainBlack;
+                transform: scale(0.8);
             }
            }
        }

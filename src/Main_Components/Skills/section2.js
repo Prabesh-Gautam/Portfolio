@@ -12,6 +12,7 @@ import Titletext from '../../Components/titletext'
 
 
 
+
 function Section2(props){
     const [popup, setpopup] = React.useState(false)
     const [value ,setvalue] = React.useState(null)
@@ -23,12 +24,12 @@ function Section2(props){
         console.log(value)
         
     }
- 
+
 
     
     return(
         <section className='section2'>
-            <SectionTitle name="Skills"/>
+            <SectionTitle name={props.title}/>
             
             <Desc 
             className="sec2-quote" 
@@ -37,7 +38,7 @@ function Section2(props){
                 <FlexContainer className="sec2-flexContainer">
                     {Skills.map((item)=>{
                         return(
-                            <Cards id={item.id} key={item.id} className="sec2-cards" onClick={handlepopup}>
+                            <Cards dataaos='fade-right' id={item.id} key={item.id} className="sec2-cards" onClick={handlepopup}>
                                 <Desc id={item.id} className="sec2-cards-desc" info={item.name} onClick={handlepopup}/>
                             </Cards>
                         )                

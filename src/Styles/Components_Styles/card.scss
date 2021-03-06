@@ -4,9 +4,9 @@
     @include flex(space-around,center);
     box-sizing: border-box;
     padding: 5px;
-    box-shadow: 0px 0px 6px black;
+    // box-shadow: 0px 0px 20px $plainBlack;
     border:none;
     outline: none;
-    background-image: linear-gradient(35deg,$color3,$primary_color,$color4);
+    background-image: linear-gradient(50deg,$plainBlack,$primary_transparent_color,$plainBlack);
     color: $plainWhite;
 }

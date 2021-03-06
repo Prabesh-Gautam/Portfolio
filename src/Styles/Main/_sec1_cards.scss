@@ -1,13 +1,13 @@
 .sec1-cards{
     @include flex(space-around,center);
     justify-content: space-around;
-    max-width: 350px;
-    margin: 4vw 4vw;
+    width: 300px;
+    margin: 3vw;
     z-index: 1;
     box-shadow: -10px 2px 10px $plainBlack;
     padding: 5px;
     .sec1-cardIcon{
-        font-size: 15vw;
+        font-size: 5vmax;
         margin: 1vw;
         box-shadow: -2px 0px 6px $plainBlack, 2px 2px 6px $plainWhite;
         color:$plainWhite;
@@ -16,7 +16,7 @@
     }
     .sec1-carddesc{
         color:$plainWhite;
-        font-size: 4vw;
+        font-size: 2vmax;
         font-weight: 600;
         text-align: center;
         box-sizing: border-box;
@@ -24,9 +24,9 @@
         padding:10px;
         text-transform: uppercase;
         letter-spacing: 2px;
+        word-break: break-all;
     }
     &:nth-child(2){
-        box-shadow: 10px 2px 10px $plainBlack;
         .sec1-cardIcon{
             order: 2;
     

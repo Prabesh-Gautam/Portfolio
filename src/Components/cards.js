@@ -7,7 +7,8 @@ function Cards(props){
         id={props.id}
         className={`cards ${props.className}`} 
         onClick={props.onClick} 
-        children={props.children}>
+        children={props.children}
+        data-aos={props.dataaos}>
         </div>
 
     )

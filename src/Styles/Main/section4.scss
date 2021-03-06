@@ -1,0 +1,61 @@
+@import '../Sass_variables/variables';
+@import '../Sass_mixins/mixins';
+
+.section4{
+    background-image: linear-gradient(45deg,$primary_color,$color3);
+    clip-path: polygon(0 0, 100% calc(100% - 95%), 100% 100%, 0% 100%);
+    z-index: 2;
+    .section4-titletext{
+        background-image: none;
+        padding-top: calc(100% - 94%)
+    }
+    .gridContainer{
+        
+        margin:2vw auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-column-gap: 2px;
+        grid-row-gap: 1vw;
+        justify-content: center;
+        align-items: center;
+        
+        .gridImages{
+            border: 2px solid black;
+            width: 100%;
+            transition: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            
+          
+            
+        }
+    }
+}
+  
+
+@media screen and (max-width:400px){
+   .section4{
+    .gridContainer{
+        grid-template-columns: auto ;
+    }
+   } 
+}
+
+@media screen and (min-width:768px){
+    .section4{
+        .gridContainer{
+            grid-template-columns: 350px 350px;
+            .gridImages{  &:active{
+                width: 400px;
+                position:relative;
+                top: 0%;
+                left: 50%;
+                transform: translate(-50%);
+                z-index: 3;
+                
+                
+            }}
+        }
+    }
+}

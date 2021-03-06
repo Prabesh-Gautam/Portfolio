@@ -1,6 +1,8 @@
 @import '../Sass_variables/variables';
 @import '../Sass_mixins/mixins';
 .btn{
+    transition: background-color;
+    transition-delay:0.5s ;
     padding: 1vw;
     text-transform: capitalize;
     font-weight: 800;

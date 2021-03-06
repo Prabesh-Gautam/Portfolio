@@ -2,42 +2,53 @@
 @import '../Sass_mixins/mixins';
 
 .section3{
+    
     .section3-mainflex{
-        background-color: $color4;
         flex-direction: column;
         justify-content: start;
         margin-top: 2vw;
-        height: 400px;
+        height: 500px;
         justify-content: space-evenly;
         overflow-x: scroll;
         overflow-y: hidden;
         &::-webkit-scrollbar{
-            display: none;
+            scrollbar-color: $primary_color;
+            scrollbar-width:10%;
         }
         .section3-subflex{
-            width: 200px;
+            margin: 1vw;
+            max-width: 200px;
             height: 400px;
-            flex-direction: column;
-            border: 2px solid black;
-            margin: 2vw;
             box-sizing: border-box;
+            flex-direction: column;
+            border: 5px solid $primary_transparent_color;
+            box-shadow: 0px 0px 15px 0px $secondary_color;
+            border-radius: 10px;
             .project-logo{
-                width: 100%;
+                width: 90%;
+                
             }
             .main-title{
+                width: 100%;
                 text-align: center;
-                margin: 5px;
-                font-size: 3vmax;
+                margin-top: 5px;
             }
             .sub-title{
+                width: 100%;
                 text-align: center;
-                margin: 5px;
-                font-size: 2vmax;
+                margin-top: 5px;
             }
             .btn-more-details{
                 margin: 5px;
-                font-size: 3vmax;
+                font-size: 2vmax;
             }
         }
+    }
+}
+
+@media screen and (min-width:768px){
+    .section3 .section3-subflex{
+        margin: 1vw;
+        transform: scale(0.85);
     }
 }

@@ -12,7 +12,7 @@ import Desc from '../Components/desc-para'
 function SliderMenu({handleClickEvent}){
  
     return(
-        <aside className="slider">
+        <aside className="slider" >
         <Close className="closeSlider" onClick = {handleClickEvent}/>
         <Flexbox className="slider-mainflex">
             <Menu items = {menuItems} className='sliderMenu'/>

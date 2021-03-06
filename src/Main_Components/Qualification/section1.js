@@ -17,6 +17,8 @@ function Section1(props){
     const [showPopup, setshowPopup] = React.useState(false)
     const [contentIndex, setContent] = React.useState(null)
 
+   
+
     function handleCardClick(event){
         console.dir(event.target)
         const extractedId=event.target.id 
@@ -30,7 +32,8 @@ function Section1(props){
     }
     return(
         <section className="section1">
-                    <SectionTitle name={props.title}/>
+                    
+                    <SectionTitle name={props.title} className="section1-sectiontitle"/>
                     <FlexBox className="sec1card-flexbox">
                                     {details.map((item)=>{
                                 return (
@@ -40,7 +43,8 @@ function Section1(props){
                                 onClick={handleCardClick} 
                                 icon={item.icon} 
                                 title={item.orgDetails.title} 
-                                className="sec1-cards">
+                                className="sec1-cards"
+                                dataaos='fade-in'>
                                         <Iconholder className="sec1-cardIcon" id={item.id}  icon={item.icon}  onClick={handleCardClick}/>
                                         <Description  id={item.id} info={item.orgDetails.title} className="sec1-carddesc" onClick={handleCardClick}/>
                                 </Cards>
@@ -52,7 +56,7 @@ function Section1(props){
             {showPopup?
             <PopUp detail={details[contentIndex]} onClick={handleCloseClick} className="contentPopup">
                 <Close className="popupClose" onClick={handleCloseClick}/>
-                <SectionTitle name='Detail Information'/>
+                <SectionTitle name='Detail Information' className="section1-popupTitle"/>
                 <ImageContainer className="popupImgContainer"  src={`/Images/${details[contentIndex].orgDetails.picture}`} alt={details[contentIndex].orgDetails.name} />
                 <FlexBox className='popupFlex'>
                     <Cards className="popupCard">

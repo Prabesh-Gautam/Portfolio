@@ -5,11 +5,40 @@
 
 .section1{
     width: 100%;
-    position: relative;
-    
-    .sec1card-flexbox{
-        flex-wrap: wrap;
-        justify-content: center;
+    // background-image: linear-gradient(45deg,$secondary_transparent_color,$transparent_color3);
+    background-image: url(/Images/apple.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 calc(100% - 95%), 100% 0, 100% 100%, 0% 100%);
+
+   
+    .section1-sectiontitle{
+        z-index: 3;
+        background-image: none;
+        color: white;
+        padding: 0px;
+        padding-top: calc(100% - 90%);
+        clip-path: none;
+        margin: 0px;
         
     }
+    .sec1card-flexbox{
+        z-index: 2;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 500px;
+        
+    }
+}
+
+@media screen and (min-width:768px){
+    .section1{
+        .sec1card-flexbox{
+            margin: 1vw;
+            .sec1-cards{
+                transform: scale(0.85);
+            }
+
+        }
+    }  
 }

@@ -5,10 +5,12 @@
 .section_title{
     min-width: 100%;
     text-align: center;
-    font-size: 5vw;
+    font-size: 3vmax;
     color: $plainWhite;
     text-shadow: 2px 2px 2px $color3;
-    margin:0;
-    padding: 10px 0;
-    background-image: linear-gradient(45deg,$primary_transparent_color,$secondary_transparent_color);
+    word-break: break-all;
+    padding: 5px 0;
+    background-image: linear-gradient(45deg,$primary_transparent_color,$transparent_color3);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30%), 50% 100%, 0 calc(100% - 30%));
 }
+
